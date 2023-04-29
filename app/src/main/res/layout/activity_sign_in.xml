@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginBottom="24sp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email id"
+        android:layout_marginBottom="24sp"
+        />
+
+    <EditText
+        android:id="@+id/edt_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Password"
+        android:layout_marginBottom="24sp"
+        />
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginBottom="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an iScany ID?"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/txt_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create yours now"
+            android:textColor="#FF0000FF"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

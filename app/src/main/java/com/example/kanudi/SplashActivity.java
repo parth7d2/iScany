@@ -1,4 +1,4 @@
-package com.example.iscany;
+package com.example.kanudi;
 
 import androidx.appcompat.app.AppCompatActivity;
 

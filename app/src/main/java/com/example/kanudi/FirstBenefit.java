@@ -32,6 +32,7 @@ public class FirstBenefit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstBenefit.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

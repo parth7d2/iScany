@@ -29,6 +29,8 @@ public class SignUpActivity extends AppCompatActivity {
     TextView txtSignIn;
     Button btnSignUp;
 
+    ProgressBar prg1;
+
     @Override
     public void onStart() {
         super.onStart();
@@ -49,7 +51,7 @@ public class SignUpActivity extends AppCompatActivity {
         edtPassword = findViewById(R.id.edt_Password);
         txtSignIn = findViewById(R.id.txt_SignIn);
         btnSignUp = findViewById(R.id.btn_signUp);
-
+        prg1  = findViewById(R.id.prg1);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -57,6 +59,7 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                prg1.setVisibility(View.VISIBLE);
                 String email = String.valueOf(edtMail.getText());
                 String password = String.valueOf(edtPassword.getText());
 
@@ -74,6 +77,7 @@ public class SignUpActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
+                                    prg1.setVisibility(View.GONE);
                                     Toast.makeText(SignUpActivity.this, "Authentication Sucessful.",
                                             Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(SignUpActivity.this, FirstBenefit.class);

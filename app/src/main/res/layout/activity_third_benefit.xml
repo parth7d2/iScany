@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdBenefit"
-    android:padding="16dp">
+    tools:context=".ThirdBenefit">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/third_a"
+        android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/txt3_Skip"
@@ -13,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text="Skip"
         android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
         />
 
     <androidx.appcompat.widget.AppCompatButton

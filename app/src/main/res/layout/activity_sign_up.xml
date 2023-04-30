@@ -32,13 +32,25 @@
         android:layout_marginBottom="16dp"
         android:hint="Enter your Password" />
 
+    <ProgressBar
+        android:id="@+id/prg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Sign Up" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"

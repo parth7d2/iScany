@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,8 @@ public class SignInActivity extends AppCompatActivity {
     Button btn_SignIn;
 
     FirebaseAuth mAuth;
+
+    ProgressBar progressBar;
 
     @Override
     public void onStart() {
@@ -48,12 +51,14 @@ public class SignInActivity extends AppCompatActivity {
         edt_SignInPassward = findViewById(R.id.edt_logPassword);
         txt_SignUp = findViewById(R.id.txt_SignUp);
         btn_SignIn = findViewById(R.id.btn_signIn);
+        progressBar = findViewById(R.id.prg);
 
         mAuth = FirebaseAuth.getInstance();
 
         btn_SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
                 String email = String.valueOf(edt_SignInEmail.getText());
                 String password = String.valueOf(edt_SignInPassward.getText());
 
@@ -70,6 +75,7 @@ public class SignInActivity extends AppCompatActivity {
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
+                                progressBar.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
                                     Toast.makeText(SignInActivity.this, "Authentication Sucessful.",

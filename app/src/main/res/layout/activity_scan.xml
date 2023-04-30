@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ScanActivity">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Scan QR"
+        android:id="@+id/btn_ScanQR"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_ScanQR"
+        android:layout_centerInParent="true"/>
+
+
+
 
 
 </RelativeLayout>

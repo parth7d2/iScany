@@ -13,6 +13,18 @@
         android:scaleType="centerCrop" />
 
     <TextView
+        android:id="@+id/txt_a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aaa3"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        />
+
+    <TextView
         android:id="@+id/txt3_Skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">iScany</string>
+    <string name="aaa1">Convenience: iscany allows you to scan QRcode and other important papers from your mobile device. This saves you time and effort from having to carry a scanner or make a trip to the office. Which will eventually going to reduce the paper use.
+</string>
+    <string name="aaa2">Organization: iscany app can help you organize your documents and reduce clutter. You can easily categorize and store your scanned files in folder, sshare to someone else or cloud storage services for easy access.
+</string>
+    <string name="aaa3">Security: iscany apps allow you to protect your sensitive information by keeping it in digital form rather than leaving physical copies lying around. You can also password-protect or encrypt your scanned files to keep them safe.</string>
 </resources>

@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Skip"
         android:layout_alignParentEnd="true"
+        android:textStyle="bold"
         android:layout_margin="16dp"
         />
 
